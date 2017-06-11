@@ -36,11 +36,11 @@ spec:
         - --secrets=/nest-exporter-secrets
         ports:
         - containerPort: 9264
-          name: nest-exporter-metrics
+          name: metrics
           protocol: TCP
         volumeMounts:
         - name: nest-exporter-secrets
-          mountPath: /nest-exporte-secrets
+          mountPath: /nest-exporter-secrets
           readOnly: true
       volumes:
       - name: nest-exporter-secrets

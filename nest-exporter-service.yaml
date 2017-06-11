@@ -28,7 +28,7 @@ spec:
   ports:
     - protocol: TCP
       port: 9264
-      targetPort: nest-exporter-metrics
+      targetPort: metrics
 
 # Local Variables:
 # indent-tabs-mode: nil

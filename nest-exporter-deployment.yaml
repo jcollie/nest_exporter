@@ -31,7 +31,9 @@ spec:
     spec:
       containers:
       - name: sabznbd
-        image: docker.io/jcollie/nest-exporter:latest
+        image: docker.io/jcollie/nest-exporter:1
+        args:
+        - --secrets=/nest-exporter-secrets
         ports:
         - containerPort: 9264
           name: nest-exporter-metrics
